@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  api_options = {
+    constraints: { format: :json },
+    defaults:    { format: :json }
+  }
+
+  namespace :api, api_options  do
+    resources :artists,  only: :index
+  end
+
+  get 'home/index'
+
+  root 'home#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
