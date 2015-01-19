@@ -8,3 +8,5 @@ class Api::ArtistsController < ApplicationController
     render json: songs
   end
 end
+
+#"https://api.morph.io/catarak/pitchfork_review_data/data.json?key=#{ENV['morphio_api_key']&query=select%20avg(score)%20as%20average%2C%20release_year%20from%20%27data%27%20group%20by%20release_year%20order%20by%20release_year%20asc"
