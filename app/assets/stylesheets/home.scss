@@ -5,3 +5,23 @@
 .bar rect {
   fill: steelblue;
 }
+
+.bar text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text, text.label {
+    fill: black;
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
