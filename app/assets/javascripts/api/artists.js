@@ -10,7 +10,7 @@ $(function() {//get data
 //Width and height
 var w = 1000;
 var h = 500;
-var padding = 25;
+var padding = 30;
 var barPadding = 1;
 
 function drawChart(data) {
@@ -45,7 +45,7 @@ function drawChart(data) {
   bar.append("text")
       .attr("class", "label")
       .attr("x", barWidth / 4)
-      .attr("y", function(d) { return h - padding + 13; })
+      .attr("y", function(d) { return h - padding + 15; })
       .attr("dy", ".75em")
       .text(function(d) { return d.album; });
 
